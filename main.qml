@@ -64,6 +64,7 @@ Window {
                         onClicked: {
                             var path_array=loader.item.rect.pathList
                             rewriteEnPath(path_array)
+                            close()
                         }
                     }
                 }

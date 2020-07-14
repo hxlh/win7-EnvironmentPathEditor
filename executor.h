@@ -2,11 +2,11 @@
 #define EXECUTOR_H
 
 #include <QObject>
-#include "QProcess"
 #include "QDebug"
 #include <QJsonObject>
 #include "QJsonDocument"
 #include "QJsonArray"
+#include "QProcess"
 class Executor :public QObject
 {
     Q_OBJECT
