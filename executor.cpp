@@ -2,11 +2,10 @@
 
 Executor::Executor()
 {
-    getEnvironmentPath();
 }
 void Executor::getEnvironmentPath(){
     QProcess p(0);
-    p.start("cmd");
+    p.start("C:\\Windows\\System32\\cmd.exe");
     p.write("set");
     p.write("\r\n");
     p.waitForStarted();
@@ -48,7 +47,7 @@ void Executor::reWritePath(const QString &value)
     arg.append("\""+str+"\"");
     arg.append(" /m");
     QProcess p(0);
-    p.start("cmd");
+    p.start("C:\\Windows\\System32\\cmd.exe");
     p.waitForStarted();
     p.write(arg.toLatin1());
     p.write("\r\n");
